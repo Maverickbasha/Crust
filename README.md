@@ -1,5 +1,9 @@
 # The Rules of Crust
 
+<p align=center>
+  <img src="./crust.png">
+</p>
+
 1. Every function is unsafe.
 1. No references, only pointers.
 1. No cargo, build with rustc directly.
