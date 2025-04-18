@@ -1,7 +1,7 @@
 # The Rules of Crust
 
 <p align=center>
-  <img src="./crust.png" width=200>
+  <img src="./crust.png" width=400>
 </p>
 
 1. Every function is unsafe.
