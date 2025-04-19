@@ -10,5 +10,6 @@
 1. No std, but libc is allowed.
 1. Only Edition 2021.
 1. All user structs #[derive(Clone, Copy)].
+1. Everything is pub by default.
 
 *The list of rules may change. The goal is to make programming in Rust fun.*
