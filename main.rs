@@ -32,7 +32,6 @@ mod raylib {
         pub a: u8,
     }
 
-    #[link(name="libraylib.a", kind="static")]
     extern "C" {
         #[link_name="InitWindow"]
         pub fn init_window(width: c_int, height: c_int, title: *const c_char);
@@ -141,17 +140,17 @@ unsafe extern "C" fn main(_argc: i32, _argv: *mut *mut u8) -> i32 {
     const RECT_SIZE: Vector2 = Vector2 { x: 100.0, y: 100.0 };
 
     let mut rects: Array<Rect> = zeroed();
-    array_push(&mut rects, Rect { 
+    array_push(&mut rects, Rect {
         position: Vector2 { x: 0.0, y: 0.0 },
         velocity: Vector2 { x: 100.0, y: 100.0 },
         color: Color {r: 0xFF, g: 0x18, b: 0x18, a: 255},
     });
-    array_push(&mut rects, Rect { 
+    array_push(&mut rects, Rect {
         position: Vector2 { x: 300.0, y: 20.0 },
         velocity: Vector2 { x: 100.0, y: 100.0 },
         color: Color {r: 0x18, g: 0xFF, b: 0x18, a: 255},
     });
-    array_push(&mut rects, Rect { 
+    array_push(&mut rects, Rect {
         position: Vector2 { x: 20.0, y: 300.0 },
         velocity: Vector2 { x: 100.0, y: 100.0 },
         color: Color {r: 0x18, g: 0x18, b: 0xFF, a: 255},
