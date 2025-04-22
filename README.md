@@ -1,6 +1,6 @@
 # The Rules of Crust
 
-<p align=center>
+<p align=left>
   <img src="./crust.png" width=200>
 </p>
 
