@@ -2,10 +2,10 @@
 
 # https://stackoverflow.com/questions/714100/os-detecting-makefile
 ifeq ($(OS),Windows_NT)
-    ARGS = ".\raylib-5.5_win64_msvc16\lib\raylib.lib Gdi32.lib WinMM.lib shell32.lib User32.lib"
+    ARGS = ".\raylib\raylib-5.5_win64_msvc16\lib\raylib.lib Gdi32.lib WinMM.lib shell32.lib User32.lib"
     OUT = main.exe
 else
-    ARGS = "-L./raylib-5.5_linux_amd64/lib -l:libraylib.a -lc -lm"
+    ARGS = "-L./raylib/raylib-5.5_linux_amd64/lib -l:libraylib.a -lc -lm"
     OUT = main
 endif
 
